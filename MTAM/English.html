@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+<a href="Português.html">Português</a>
+<a href="English.html">English</a>
+<a href="Français.html">Français</a>
+<a href="Español.html">Español</a>
+<br>
+<br>
+    <div class="btn-container">
+        <button name="increase-font" id="increase-font" title="Increase-font">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Decrease-font">A -</button>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background: white;
+            color: black;
+            font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+            font-size: 16px;
+
+
+        }
+
+        </style>
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon mapa 32x32.ico" type="image/x-icon">
+    <title>projeto metodos e praticas do multilinguismo</title>
+</head>
+<body>
+    <h1>Tour through the 3 metro stations of Samambaia </h1>
+    <h2>Terminal Samambaia Station</h1>
+    <img src="imagens/estação terminal samambaia.jpg" alt="Photo of a subway sign that reads 'Samambaia' in front of the subway station. Two cars parked in front of the subway station. The subway station is a concrete structure with a staircase and a ramp leading up to it."> <img src="imagens/mapa da estação terminal samambaia 312x336.png" alt="Map of Terminal Samambaia station">
+
+    <h4>The Wonders of Terminal Samambaia station:</h4>
+    <p>Ski-bi-dibby-dib-yo-da-dub-dub
+        Yo-da-dub-dub
+        Ski-bi-dibby-dib-yo-da-dub-dub
+        Yo-da-dub-dub (I'm the Scatman)
+        Ski-bi-dibby-dib yo-da-dub-dub
+        Yo-da-dub-dub
+        Ski-bi-dibby-dib yo-da-dub-dub
+        Yo-da-dub-dub
+        
+        Ba-da-ba-da-ba-be-bop-bop-bodda-bope
+        Bop-ba-bodda-bope
+        Be-bop-ba-bodda-bope
+        Bop-ba-bodda
+        Ba-da-ba-da-ba-be-bop-ba-bodda-bope
+        Bop-ba-bodda-bope
+        Be-bop-ba-bodda-bope
+        Bop-ba-bodda-bope
+        
+         <a href="https://www.google.com/maps/place/Esta%C3%A7%C3%A3o+Samambaia/@-15.8725115,-48.0873507,16z/data=!4m6!3m5!1s0x935bd2b1f94ec461:0xaf1d3aaa2c3cd0f2!8m2!3d-15.87371!4d-48.08493!16s%2Fg%2F11_yxvwxx?authuser=0&entry=ttu">Here is the location. </a> </p>
+
+    <h2>Samambaia Sul Station</h2>
+    <img src="imagens/estação samambaia sul 512x336.jpg" alt="Concrete structure with a sign reading 'Samambaia Sul' and a blurred advertisement above the sign."> <img src="imagens/mapa da estação samambaia sul.png" alt="Map of Samambaia Sul Station">
+    <h4>The secrets of Samambaia Sul Station:</h4>
+    <p>Big Smoke: I’ll have two number 9s, a number 9 large, a number 6 with extra dip, a number 7, two number 45s, one with cheese, and a large soda. <a href="https://www.google.com/maps/place/Samambaia+Sul/@-15.8699522,-48.0725878,16z/data=!4m6!3m5!1s0x935a2d508a717109:0xd08900f72b4c6085!8m2!3d-15.86903!4d-48.07163!16s%2Fg%2F11_yy716r?authuser=0&entry=ttu">Here is the location.</a> </p>
+    <h2>Furnas Station</h2>
+    <img src="imagens/estação furnas.png" alt="A group of people is gathered around a car in a parking lot in front of the subway station. There is a sign in the middle that reads 'Furnas.' The setting is outdoors, with a clear sky in the background. The predominant colors in the image are shades of gray and brown, with accents in darker tones."> <img src="imagens/mapa da estação furnas.png" alt="mapa da estação Furnas">
+    <p>Never gonna give you up.
+        Never gonna let you down.
+        Never gonna turn around and desert you.
+        Never gonna make you cry.
+        Never gonna say goodbye.
+        Never gonna tell a lie and hurt you. <a href="https://www.google.com/maps/place/Furnas/@-15.8669594,-48.0602925,16z/data=!4m6!3m5!1s0x935a2d6743bf10a3:0xb27a8278223e0272!8m2!3d-15.86494!4d-48.05981!16s%2Fg%2F11_yyf__y?authuser=0&entry=ttu">Here is the location.</a> </p>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
+
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+        }
+    </script>
+</body>
+</html>
