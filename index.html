@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+
+<a href="index.html">Português</a>
+<a href="English.html">English</a>
+<a href="Français.html">Français</a>
+<a href="Español.html">Español</a>
+<br>
+<br>
+
+    <div class="btn-container">
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background: white;
+            color: black;
+            font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+            font-size: 16px;
+
+
+        }
+
+        </style>
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon mapa 32x32.ico" type="image/x-icon">
+    <title>projeto metodos e praticas do multilinguismo</title>
+</head>
+<body>
+    <h1>Tour pelas 3 estações de metro de samambaia</h1>
+    <h2>Estação terminal Samambaia</h1>
+    <img src="imagens/estação terminal samambaia.jpg" alt="Foto de um sinal do metrô escrito 'Samambaia' em frente à estação de metrô. Dois carros estacionados em frente à estação de metrô. A estação de metrô é uma estrutura de concreto com uma escada e uma rampa levando até ela."> <img src="imagens/mapa da estação terminal samambaia 312x336.png" alt="mapa da Estação Terminal Samambaia">
+
+    <h4>as maravilhas da Estação terminal Samambaia:</h4>
+    <p>Caneta azul, azul caneta
+        Caneta azul tá marcada com minha letra
+        Caneta azul, azul caneta
+        Caneta azul tá marcada com minha letra <a href="https://www.google.com/maps/place/Esta%C3%A7%C3%A3o+Samambaia/@-15.8725115,-48.0873507,16z/data=!4m6!3m5!1s0x935bd2b1f94ec461:0xaf1d3aaa2c3cd0f2!8m2!3d-15.87371!4d-48.08493!16s%2Fg%2F11_yxvwxx?authuser=0&entry=ttu">Aqui está a localização. </a> </p>
+
+    <h2>estação samambaia sul</h2>
+    <img src="imagens/estação samambaia sul 512x336.jpg" alt="estrutura de concreto com placa escrita samambaia sul e uma propaganda borrada acima da placa"> <img src="imagens/mapa da estação samambaia sul.png" alt="mapa da estação Samambaia Sul">
+    <h4>os segredos da estação samambaia sul:</h4>
+    <p>Ednaldo Pereira: Você não vale nada
+        você vale tudo,
+        você topa qualquer parada,
+        pois você quer ser tudo,
+        e não é de nada,
+        jogue
+        somente para ganhar
+        e não para perder,
+        a vida é assim
+        cheia de dificuldades,
+        fale o que quiser  <a href="https://www.google.com/maps/place/Samambaia+Sul/@-15.8699522,-48.0725878,16z/data=!4m6!3m5!1s0x935a2d508a717109:0xd08900f72b4c6085!8m2!3d-15.86903!4d-48.07163!16s%2Fg%2F11_yy716r?authuser=0&entry=ttu">Aqui está a localização.</a> </p>
+    <h2>Estação furnas</h2>
+    <img src="imagens/estação furnas.png" alt="Um grupo de pessoas está reunido ao redor de um carro em um estacionamento em frente à estação de metrô. Há uma placa no meio, nela está escrito Furnas. O cenário é ao ar livre, com um céu claro ao fundo. As cores predominantes na imagem são tons de cinza e marrom, com acentos em tons mais escuros."> <img src="imagens/mapa da estação furnas.png" alt="mapa da estação Furnas">
+    <p> Seu Madruga: Ein? Suponhamos que isso seja uma caveira, mas o que significa? Uma bandeira de Pirata? -NÃO!
+        Um anúncio de um cemitério? - Tão pouco!
+        Essa caveira significa -PRERIGO!
+        Ouviram bem! -PRE-RI-GO! <a href="https://www.google.com/maps/place/Furnas/@-15.8669594,-48.0602925,16z/data=!4m6!3m5!1s0x935a2d6743bf10a3:0xb27a8278223e0272!8m2!3d-15.86494!4d-48.05981!16s%2Fg%2F11_yyf__y?authuser=0&entry=ttu">Aqui está a localização.</a> </p>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
+
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+        }
+    </script>
+</body>
+</html>
