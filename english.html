@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+    <div style="text-align: center; font-size: 18px;">
+        Projeto de Métodos e Técnicas Aplicadas ao Multilinguismo, 2024.1 - Eduardo de Melo Cavalcante
+      </div>
+    <br>
+    <br>
+    
+    <link rel="stylesheet" href="style.css">
+    
+<a href="index.html">Português</a>
+<a href="english.html">English</a>
+<a href="français.html">Français</a>
+<a href="español.html">Español</a>
+<br>
+<br>
+    <div class="btn-container">
+        <button name="increase-font" id="increase-font" title="Increase-font">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Decrease-font">A -</button>
+        <button name="toggle-dark-mode" id="toggle-dark-mode" title="Toggle dark mode">Dark mode</button>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon mapa 32x32.ico" type="image/x-icon">
+    <title>projeto metodos e praticas do multilinguismo</title>
+</head>
+<body>
+    <h1>Tour through the 3 metro stations of Samambaia </h1>
+    <h2>Terminal Samambaia Station</h1>
+    <img src="imagens/estação terminal samambaia.jpg" alt="Photo of a subway sign that reads 'Samambaia' in front of the subway station. Two cars parked in front of the subway station. The subway station is a concrete structure with a staircase and a ramp leading up to it."> <img src="imagens/mapa da estação terminal samambaia 312x336.png" alt="Map of Terminal Samambaia station">
+
+    <h3>Discover the Samambaia Terminal Station:</h3>
+    <p>The Terminal Samambaia Station is one of the stations of Distrito Federal metro, situated in Samambaia, followed by the Samambaia Sul Station. Managed by the Companhia do Metropolitano do Distrito Federal, it is one of the terminal stations on the orange line.     
+         <a href="https://www.google.com/maps/place/Esta%C3%A7%C3%A3o+Samambaia/@-15.8725115,-48.0873507,16z/data=!4m6!3m5!1s0x935bd2b1f94ec461:0xaf1d3aaa2c3cd0f2!8m2!3d-15.87371!4d-48.08493!16s%2Fg%2F11_yxvwxx?authuser=0&entry=ttu">Here is the location. </a> </p>
+
+    <h2>Samambaia Sul Station</h2>
+    <img src="imagens/estação samambaia sul 512x336.jpg" alt="Concrete structure with a sign reading 'Samambaia Sul' and a blurred advertisement above the sign."> <img src="imagens/mapa da estação samambaia sul.png" alt="Map of Samambaia Sul Station">
+    <h3>Discover the Samambaia Sul Station:</h3>
+    <p>The Samambaia Sul Station is one of the stations of the Federal District Metro, located in Samambaia, between the Furnas Station and the Samambaia Terminal Station. Managed by the Federal District Metro Company, it is part of the Orange Line. <a href="https://www.google.com/maps/place/Samambaia+Sul/@-15.8699522,-48.0725878,16z/data=!4m6!3m5!1s0x935a2d508a717109:0xd08900f72b4c6085!8m2!3d-15.86903!4d-48.07163!16s%2Fg%2F11_yy716r?authuser=0&entry=ttu">Here is the location.</a> </p>
+    <h2>Furnas Station</h2>
+    <img src="imagens/estação furnas.png" alt="A group of people is gathered around a car in a parking lot in front of the subway station. There is a sign in the middle that reads 'Furnas.' The setting is outdoors, with a clear sky in the background. The predominant colors in the image are shades of gray and brown, with accents in darker tones."> <img src="imagens/mapa da estação furnas.png" alt="mapa da estação Furnas">
+    <h3>Discover the Furnas Station:</h3>
+    <p>The Furnas Station is one of the stations of the Federal District Metro, located in Samambaia, between the Taguatinga Sul Station and the Samambaia Sul Station. Managed by the Federal District Metro Company, it is part of the Orange Line. <a href="https://www.google.com/maps/place/Furnas/@-15.8669594,-48.0602925,16z/data=!4m6!3m5!1s0x935a2d6743bf10a3:0xb27a8278223e0272!8m2!3d-15.86494!4d-48.05981!16s%2Fg%2F11_yyf__y?authuser=0&entry=ttu">Here is the location.</a> </p>
+
+    <video width="800" height="500" controls="controls" autoplay="autoplay">
+        <source src="imagens/estação furnas.mp4" type="video/mp4" alt="video without audio inside Furnas Station filmed from inside a moving carriage, for most of the video another train is shown on the other side of the platform.">
+        <object data="" width="320" height="240">
+        <embed width="320" height="240" src="estação furnas.mp4">
+    </video>
+        
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
+
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+        }
+    </script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var elementBody = document.querySelector('body');
+        var elementBtnIncreaseFont = document.getElementById('increase-font');
+        var elementBtnDecreaseFont = document.getElementById('decrease-font');
+        var elementBtnToggleDarkMode = document.getElementById('toggle-dark-mode');
+        
+        var fontSize = 100;
+        var increaseDecrease = 10;
+
+        elementBtnIncreaseFont.addEventListener('click', function(event) {
+            fontSize = fontSize + increaseDecrease;
+            elementBody.style.fontSize = fontSize + '%';
+        });
+
+        elementBtnDecreaseFont.addEventListener('click', function(event) {
+            fontSize = fontSize - increaseDecrease;
+            elementBody.style.fontSize = fontSize + '%';
+        });
+
+        elementBtnToggleDarkMode.addEventListener('click', function(event) {
+            elementBody.classList.toggle('dark-mode');
+        });
+    }
+    </script>
+</body>
+</html>
