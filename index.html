@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon mapa 32x32.ico" type="image/x-icon">
+    <title>Projeto Métodos e Práticas do Multilinguismo</title>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v20.0"></script>
+
+    <div style="text-align: center; font-size: 18px;">
+        Projeto de Métodos e Técnicas Aplicadas ao Multilinguismo, 2024.1 - Eduardo de Melo Cavalcante
+    </div>
+    <br>
+    <br>
+
+    <a href="index.html">Português</a>
+    <a href="english.html">English</a>
+    <a href="français.html">Français</a>
+    <a href="español.html">Español</a>
+    <br>
+    <br>
+
+    <div class="btn-container">
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+        <button name="toggle-dark-mode" id="toggle-dark-mode" title="Alternar modo escuro">Modo Escuro</button>
+    </div>
+
+    <h1>Tour pelas 3 estações de metrô de Samambaia</h1>
+    <br>
+    
+    <h2>Estação Terminal Samambaia</h2>
+    <img src="imagens/estação terminal samambaia.jpg" alt="Sinal do metrô escrito 'Samambaia' em frente à estação de metrô. Escada e uma rampa levando até ela.">
+    <img src="imagens/mapa da estação terminal samambaia 312x336.png" alt="mapa da Estação Terminal Samambaia">
+
+    <h3>Conheça a Estação Terminal Samambaia:</h3>
+    <p>A Estação Terminal Samambaia é uma das estações do Metrô do Distrito Federal, situada em Samambaia, seguida da Estação Samambaia Sul. Administrada pela Companhia do Metropolitano do Distrito Federal, é uma das estações terminais da Linha Laranja. <a href="https://www.google.com/maps/place/Esta%C3%A7%C3%A3o+Samambaia/@-15.8725115,-48.0873507,16z/data=!4m6!3m5!1s0x935bd2b1f94ec461:0xaf1d3aaa2c3cd0f2!8m2!3d-15.87371!4d-48.08493!16s%2Fg%2F11_yxvwxx?authuser=0&entry=ttu">Aqui está a localização.</a></p>
+    <hr>
+
+    <h2>Estação Samambaia Sul</h2>
+    <img src="imagens/estação samambaia sul 512x336.jpg" alt="Estrutura de concreto com placa escrita Samambaia Sul e uma propaganda borrada acima da placa.">
+    <img src="imagens/mapa da estação samambaia sul.png" alt="Mapa da estação Samambaia Sul">
+    <h3>Conheça a Estação Samambaia Sul:</h3>
+    <p>A Estação Samambaia Sul é uma das estações do Metrô do Distrito Federal, situada em Samambaia, entre a Estação Furnas e a Estação Terminal Samambaia. Administrada pela Companhia do Metropolitano do Distrito Federal, faz parte da Linha Laranja. <a href="https://www.google.com/maps/place/Samambaia+Sul/@-15.8699522,-48.0725878,16z/data=!4m6!3m5!1s0x935a2d508a717109:0xd08900f72b4c6085!8m2!3d-15.86903!4d-48.07163!16s%2Fg%2F11_yy716r?authuser=0&entry=ttu">Aqui está a localização.</a></p>
+    <hr>
+
+    <h2>Estação Furnas</h2>
+    <img src="imagens/estação furnas.png" alt="Um estacionamento em frente à estação de metrô. Há uma placa no meio, nela está escrito Furnas.">
+    <img src="imagens/mapa da estação furnas.png" alt="Mapa da estação Furnas">
+    <h3>Conheça a Estação Furnas:</h3>
+    <p>A Estação Furnas é uma das estações do Metrô do Distrito Federal, situada em Samambaia, entre a Estação Taguatinga Sul e a Estação Samambaia Sul. Administrada pela Companhia do Metropolitano do Distrito Federal, faz parte da Linha Laranja. <a href="https://www.google.com/maps/place/Furnas/@-15.8669594,-48.0602925,16z/data=!4m6!3m5!1s0x935a2d6743bf10a3:0xb27a8278223e0272!8m2!3d-15.86494!4d-48.05981!16s%2Fg%2F11_yyf__y?authuser=0&entry=ttu">Aqui está a localização.</a></p>
+
+    <video width="800" height="500" controls autoplay>
+        <source src="imagens/estação furnas.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <figcaption>Vídeo sem áudio por dentro da Estação Furnas filmado de dentro de um vagão em movimento, na maior parte do video outro trem é mostrado no outro lado da plataforma.</figcaption>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            var elementBtnToggleDarkMode = document.getElementById('toggle-dark-mode');
+
+            var fontSize = 100;
+            var increaseDecrease = 10;
+
+            elementBtnIncreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            elementBtnDecreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            elementBtnToggleDarkMode.addEventListener('click', function(event) {
+                elementBody.classList.toggle('dark-mode');
+            });
+        }
+    </script>
+<div class="fb-comments" data-href="https://starrixbr.github.io/Civ.-Exp.-Francesa/" data-width="" data-numposts="5"></div>
+</body>
+</html>
